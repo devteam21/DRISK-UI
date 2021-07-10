@@ -1,0 +1,7 @@
+{
+  "name": "D'RiskUI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

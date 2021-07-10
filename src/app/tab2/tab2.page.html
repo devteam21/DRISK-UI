@@ -1,0 +1,103 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+      Screening <span>Page</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="12">
+    <ion-card>
+      <ion-item color="dark" lines="none">
+        <p class="newline2">DAFTAR FAKTOR RESIKO</p>
+        <p class="newline2" slot="end">SKOR</p>
+      </ion-item>
+      
+        <ion-list>
+          <ion-item *ngFor="let entry of form" lines="full">
+            <p class="newline">{{entry.val}}</p>
+            <ion-checkbox slot="end" [(ngModel)]="entry.isChecked" color="{{entry.color}}" disabled="{{entry.disabled}}"></ion-checkbox>
+            <ion-button fill="solid" color="{{entry.color}}"slot="end" disabled>{{entry.value}}</ion-button>
+          </ion-item>
+
+        </ion-list>
+        <ion-item color="dark" lines="none">
+          <p class="newline2">SKOR AKHIR</p>
+          <ion-button slot="end" fill="solid" color="medium" (click)="hitungSkor()">HITUNG</ion-button>
+        </ion-item>
+    </ion-card>
+
+    <br>
+
+    <!-- *ngIf="rincian" -->
+    <ion-card> 
+      <ion-item color="dark" lines="full">
+        <p class="newline2">PENYULUHAN</p>
+        <p class="newline2" slot="end">HASIL</p>
+      </ion-item>
+
+      <ion-list>
+        <ion-item lines="full">
+          <ion-icon name="heart" slot="start"></ion-icon>
+          <p class="newline">JUMLAH SKOR</p>
+          <ion-button fill="solid" slot="end" disabled color="success">2</ion-button>
+        </ion-item>
+    
+        <ion-item lines="full">
+          <ion-icon name="body" slot="start"></ion-icon>
+          <p class="newline">PERAWATAN</p>
+          <ion-button fill="solid" slot="end" disabled color="dark" color="success">BIDAN</ion-button>
+        </ion-item>
+  
+        <ion-item lines="full">
+          <ion-icon name="car" slot="start"></ion-icon>
+          <p class="newline">RUJUKAN</p>
+          <ion-button fill="solid" slot="end" disabled color="dark" color="success">TIDAK DIRUJUK</ion-button>
+        </ion-item>
+  
+        <ion-item lines="full">
+          <ion-icon name="navigate" slot="start"></ion-icon>
+          <p class="newline">TEMPAT</p>
+          <ion-button fill="solid" slot="end" disabled color="dark" color="success">POLINDES</ion-button>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-icon name="people-circle" slot="start"></ion-icon>
+          <p class="newline">PENOLONG</p>
+          <ion-button fill="solid" slot="end" disabled color="dark" color="success">BIDAN</ion-button>
+        </ion-item>
+        
+        <div class="hasilskor">
+          <ion-button fill="solid" class="hasilskor2" disabled color="dark" color="success" size="small">KEHAMILAN RESIKO RENDAH (KRR</ion-button>
+        </div>
+
+      </ion-list>
+    
+      <ion-item color="dark" lines="none">
+      </ion-item>
+    </ion-card>
+
+    <br>
+
+    <!-- *ngIf="penjabaran" -->
+    <ion-card >
+      <ion-item color="dark" lines="full">
+        <p class="newline2">PENJABARAN INDIKATOR</p>
+      </ion-item>
+      <ion-card-content>
+        <br>
+        <p class="newline1">SKOR AWAL IBU HAMIL<br>Merupakan kondisi awal Ibu hamil.</p>
+        <hr>
+        <p class="newline1"><b>Konsultasikan dengan tenaga ahli,</b><br><a href="https://api.whatsapp.com/send?phone=6285708573920&text=Assalamu%27alaikum%20Bu.%20Ika%2C%20Saya%20pengguna%20aplikasi%20D%27Risk%20ingin%20berkonsutasi%20lebih%20lanjut%20terkait..">Bidan Ika Mardiyanti, SST, M.Kes</a></p>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-col>
+</ion-row>
+</ion-grid>  
+</div>
+</ion-content>

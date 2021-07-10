@@ -1,0 +1,113 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title><span>D'Risk</span> Apps</ion-title>
+    <ion-buttons slot="end" (click)="hitungData()">
+    <ion-button color="medium" >
+      <ion-icon name="person-circle-outline" class="large-icon"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="ion-padding">
+    <div>
+      <h4 class="p-4">Beranda <span class="fr link" (click)="clickEdit()">Edit</span></h4>
+    </div>
+
+  <div *ngIf="profil">
+    <ion-grid fixed>
+      <ion-row>
+        <h6 class="p-4">Masukan data Bunda, dibawah ini :</h6>
+        <ion-col size="12">
+          <ion-card>
+            <ion-item color="primary">
+              <ion-label position="floating">Nama Bunda</ion-label>
+              <ion-input [(ngModel)]="nama" maxlength="15"></ion-input>
+              <ion-icon name="people" slot="end"></ion-icon>
+            </ion-item>
+            <ion-item color="primary">
+              <ion-label position="floating">Tanggal kunjungan</ion-label>
+              <ion-datetime pickerFormat="DD MMM, YYYY" displayFormat="DD/MM/YYYY" [(ngModel)]="selectTk"></ion-datetime>
+              <ion-icon name="calendar" slot="end"></ion-icon>
+            </ion-item>
+            <ion-item color="primary">
+              <ion-label position="floating">Hari pertama haid terakhir (HPHT)</ion-label>
+              <ion-datetime pickerFormat="DD MMM, YYYY" displayFormat="DD/MM/YYYY" [(ngModel)]="selectHpht"></ion-datetime>
+              <ion-icon name="calendar" slot="end"></ion-icon>
+            </ion-item>
+            <ion-item color="dark" lines="full">
+              <ion-button expand="block" fill="solid" color="medium" (click)="hitungData()" slot="end">SIMPAN</ion-button>
+            </ion-item>  
+          </ion-card>
+          <h6 class="p-4">Hasil data Bunda, dibawah ini :</h6>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="12">
+          <ion-card color="primary">
+                <ion-card-content>
+                  <div class="title">
+                    <ion-icon name="person-outline" class="fr" color="dark"></ion-icon>
+                    <p>Assalamu'alaikum, Bunda</p>
+                    <hr class="hrskuy">
+                    <h2 class="capitalize">Devaldi Akbar S</h2>
+                  </div>
+                </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="12">
+          <ion-card color="dark">
+            <ion-card-content>
+              <div class="title">
+                <ion-icon name="reader-outline" class="fl" color="dark"></ion-icon>
+                <p>Perkiraan lahir</p>  
+              </div>
+              <p>21 Juli 2000</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="12">
+          <ion-card color="dark">
+            <ion-card-content>
+              <div class="title">
+                <ion-icon name="time-outline" class="fl" color="dark"></ion-icon>
+                <p>Usia kehamilan</p> 
+              </div>
+              <p>1 Minggu 7 Hari</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="12">
+          <ion-card color="primary">
+                <ion-card-content>
+                  <div class="title">
+                    <ion-icon name="calendar-outline" class="fr" color="dark"></ion-icon>
+                    <p><b>Perkembangan janin pada usia,</b></p>
+                    <h2>2 Minggu</h2>
+                    <p>Sel telur akan membelah menjadi dua. Sambil terus membelah, sel telur bergerak di dalam lubang falopi menuju rahim.</p>
+                    <ion-icon name="accessibility-outline" class="fr" color="dark"></ion-icon>
+                    <br>
+                    <p><b>Kebutuhan Ibu hamil pada usia, 2 Minggu</b></p>
+                    <p>Kehamilan melibatkan seluruh anggota keluarga, karena konsepsi merupakan awal, bukan saja bagi janin yang sedang berkembang tetapi juga bagi keluarganya, yakni dengan hadirnya seorang anggota keluarga baru dan terjadinya perubahan hubungan dalam keluarga, maka setiap anggota keluarga harus beradaptasi terhadap kehamilan dan menginterpretasikanya berdasarkan kebutuhan masing - masing.<br><br></p>
+                    <hr>
+                    <p><b>Konsultasikan dengan tenaga ahli,</b><br><a href="https://api.whatsapp.com/send?phone=6285708573920&text=Assalamu%27alaikum%20Bu.%20Ika%2C%20Saya%20pengguna%20aplikasi%20D%27Risk%20ingin%20berkonsutasi%20lebih%20lanjut%20terkait..">Bidan Ika Mardiyanti, SST, M.Kes</a></p>
+                  </div>
+                </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>  
+  </div>
+  </div>
+  
+</ion-content>

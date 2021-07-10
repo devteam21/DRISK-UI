@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "D'RiskUI",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

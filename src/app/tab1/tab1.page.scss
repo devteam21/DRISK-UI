@@ -1,0 +1,104 @@
+ion-item {
+    --border-color: #f35aa3; // default underline color
+    --highlight-color-invalid: #f35aa3; // invalid underline color
+    --highlight-color-valid: #f35aa3; // valid underline color
+  }
+  
+  ion-list {
+    border-radius: 16px;
+  }
+  
+  a {
+    color: #f35aa3;
+    text-decoration: none;
+  }
+  
+  .large-icon {
+    font-size: 30px;
+  }
+  
+  .no-pointer {
+    pointer-events: none;
+  }
+  
+  .p-4 {
+    padding: 0 4px;
+  }
+  
+  .fl {
+    float: left;
+  }
+  
+  .fr {
+    float: right;
+  }
+  
+  .link {
+    font-size: 14px;
+  }
+  
+  .title-space {
+    padding-bottom: 40px;
+  }
+  
+  ion-card {
+    margin: 4px;
+    box-shadow: none;
+    border-radius: 16px;
+  }
+  
+  ion-grid, ion-col {
+    padding: 0;
+  }
+  
+  ion-title {
+    span {
+        color: #f35aa3;
+    }
+  }
+  
+  .title {
+    ion-icon {
+        font-size: 20px;
+        color: #333;
+        background-color: #fff;
+        padding: 4px;
+        border: 1px solid white;
+        border-radius: 8px;
+        margin-right: 14px;
+        margin-top: 6px;
+    }
+  
+    p {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: justify;
+    }
+  
+    h2 {
+        font-size: 34px;
+        font-weight: bold;
+        color: #f35aa3;;
+
+    }
+  
+    h2.capitalize {
+      text-transform: capitalize;
+    }
+  
+    .mb {
+        padding-bottom: 8px;
+    }
+  
+  }
+
+  .hrskuy {
+    background: #1b0636;
+    height: 2px;
+    margin-right: 60px;
+  }
+
+  hr {
+    background: #1b0636;
+    height: 2px;
+  }
