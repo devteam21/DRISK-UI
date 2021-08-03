@@ -1,11 +1,9 @@
 # DRISK
 D'RISK (DETEKSI RISIKO KEHAMILAN) sebuah, aplikasi berbasis IONIC untuk melakukan perhitungan resiko pasca kelahiran agar dapat merencanakan persalinan dengan aman, aplikasi ini memiliki fungsi skrining perkembangan dari kartu skor 'Poedji Rochjati', perhitungan perkiraan lahir dan usia kehamilan serta penjelasan lengkapnya dan tidak lupa kami menambahkan fungsi edukasi untuk menambah pengetahuan Bunda.
 
-### PLAYSTORE
-https://play.google.com/store/apps/details?id=drisk.atdevaldiakbar.biz.id
-
-### APPSTORE
-SOON
+### DOWNLOAD NOW
+<p><a title="DRISK PLAYSTORE" href="https://play.google.com/store/apps/details?id=drisk.atdevaldiakbar.biz.id" target="_blank"><img src="https://user-images.githubusercontent.com/19890311/127939003-96acc3fb-5161-4adb-beb4-49d7c3f4ce13.png" alt="" width="646" height="250" /></a></p>
+<p><a title="DRISK APPSTORE" href="https://apps.apple.com/id/app/drisk/id1578206329" target="_blank"><img src="https://user-images.githubusercontent.com/19890311/127939000-8d20da09-4303-4250-aafa-92502e9432d2.png" alt="" width="646" height="250" /></a></p>
 
 ### Executing program
 * Clone Project
